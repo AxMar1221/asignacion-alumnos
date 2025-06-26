@@ -20,9 +20,9 @@ export const Navbar = () => {
                         sx={{borderRadius: '3px', color: 'white'}}
                     >
                         <NavLink
-                            to='/'
+                            to='/home'
                             style={({ isActive }) => ({
-                                color: isActive ? 'white' : 'Yellow',
+                                color: isActive ? 'white' : 'success',
                                 textDecoration: 'none',
                                 fontSize: '1.5rem',
                                 fontWeight: 'bold'
@@ -30,6 +30,51 @@ export const Navbar = () => {
                         >
                             <SchoolRoundedIcon sx={{marginRight: '10px'}} />
                             Inicio
+                        </NavLink>
+                    </MenuItem>
+                    <MenuItem
+                        sx={{borderRadius: '3px', color: 'white'}}
+                    >
+                        <NavLink
+                            to='/asignacion'
+                            style={({ isActive }) => ({
+                                color: isActive ? 'white' : 'success',
+                                textDecoration: 'none',
+                                fontSize: '1.5rem',
+                                fontWeight: 'bold'
+                            })}
+                        >
+                            Asignar
+                        </NavLink>
+                    </MenuItem>
+                    <MenuItem
+                        sx={{borderRadius: '3px', color: 'white'}}
+                    >
+                        <NavLink
+                            to='/grupos'
+                            style={({ isActive }) => ({
+                                color: isActive ? 'white' : 'success',
+                                textDecoration: 'none',
+                                fontSize: '1.5rem',
+                                fontWeight: 'bold'
+                            })}
+                        >
+                            Grupos
+                        </NavLink>
+                    </MenuItem>
+                    <MenuItem
+                        sx={{borderRadius: '3px', color: 'white'}}
+                    >
+                        <NavLink
+                            to='/tabla'
+                            style={({ isActive }) => ({
+                                color: isActive ? 'white' : 'success',
+                                textDecoration: 'none',
+                                fontSize: '1.5rem',
+                                fontWeight: 'bold'
+                            })}
+                        >
+                            Tabla
                         </NavLink>
                     </MenuItem>
                 </Toolbar>

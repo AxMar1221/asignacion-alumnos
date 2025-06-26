@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { HomeApp } from "../Pages"
+import { AsignacionApp, HomeApp, GruposAsignadosApp, TablaAlumnosApp} from "../Pages"
 
 
 export const RouterPages = () => {
@@ -7,6 +7,9 @@ export const RouterPages = () => {
     <>
         <Routes>
             <Route path='/home' element={<HomeApp/>} />
+            <Route path='/asignacion' element={<AsignacionApp />} />
+            <Route path='/grupos' element={<GruposAsignadosApp />} />
+            <Route path='/tabla' element={<TablaAlumnosApp />} />
         </Routes>
     </>
   )
