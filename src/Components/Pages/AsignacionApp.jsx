@@ -10,11 +10,11 @@ export const AsignacionApp = () => {
   const [alumnos, setAlumnos] = useState([]);
   const [grupos, setGrupos] = useState(null);
   const [criterios, setCriterios] = useState({
-    grupo: 'aleatorio',
+    grupo: '',
     nivelIngles: '',
     efp: '',
     area: '',
-    cantidad: 5,
+    cantidad: ''
   });
 
   const handleCSVUpload = (e) => {
